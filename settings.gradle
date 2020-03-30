@@ -1,0 +1,1 @@
+include ':app', ':camera', ':reclib-qq', ':reclib-testemoticons', ':chatapp'

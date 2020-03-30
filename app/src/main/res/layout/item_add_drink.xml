@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="12dp"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addDrinkTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="追加酒水①"
+            android:textColor="#ff333333"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:id="@+id/addDrinkMoneyLayout"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共计："
+                android:textColor="#ff333333"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/addDrinkMoneyMiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥68800.00"
+                android:textColor="#FF6464"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:id="@+id/addDrinkTime"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:textColor="#ff999999"-->
+            <!--android:textSize="13dp" />-->
+    </LinearLayout>
+
+    <com.example.shadow.heartrecreation.view.NestedExpandaleListView
+        android:id="@+id/addDrinkList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/AddPresentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:background="#FF911E" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赠送"
+            android:textColor="#ff333333"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/addDrinkPresentList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:id="@+id/addDrinkListMoneyLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共计："
+            android:textColor="#ff333333"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/addDrinkMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥68800.00"
+            android:textColor="#FF6464"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/addDrinkMiss">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@mipmap/double_more_button_top"
+            android:drawablePadding="4dp"
+            android:text="折叠"
+            android:textColor="#ff666666"
+            android:textSize="13dp"
+            android:id="@+id/addDrinkMissText"/>
+    </RelativeLayout>
+
+</LinearLayout>

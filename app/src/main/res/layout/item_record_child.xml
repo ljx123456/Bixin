@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:background="#FF911E" />
+
+        <TextView
+            android:id="@+id/recordChildName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="啤酒"
+            android:textColor="#ff333333"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/recordChildTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有效期：7天"
+            android:textColor="#ff999999"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recordChildList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

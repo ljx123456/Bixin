@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择支付方式"
+            android:textColor="#ff333333"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/payOver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="12dp"
+            android:src="@mipmap/screen_button_close" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#E1E1E1" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/weChat"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@mipmap/fill"
+            android:drawableRight="@drawable/pay_selector"
+            android:drawablePadding="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="微信"
+            android:textColor="#000000"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#E1E1E1" />
+
+        <RadioButton
+            android:id="@+id/alipay"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:button="@null"
+            android:drawableLeft="@mipmap/alipay"
+            android:drawableRight="@drawable/pay_selector"
+            android:drawablePadding="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="支付宝"
+            android:textColor="#000000"
+            android:textSize="13dp" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E1E1E1" />
+
+    <TextView
+        android:id="@+id/payOk"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="#FE849B"
+        android:textSize="20dp" />
+
+</LinearLayout>

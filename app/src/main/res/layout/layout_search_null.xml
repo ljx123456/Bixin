@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/errorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF0F4">
+
+    <ImageView
+        android:id="@+id/noNetworkView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/icon_search" />
+
+    <TextView
+        android:id="@+id/workTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noNetworkView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="暂无搜索结果，换个词试试吧"
+        android:textColor="#b7b9bd" />
+
+    <TextView
+        android:id="@+id/anewClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/work_shape_shape"
+        android:gravity="center"
+        android:text="去约玩"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+</RelativeLayout>

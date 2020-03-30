@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF0F4"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/item_bg"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:id="@+id/detailsName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="56dp"
+                        android:gravity="center_vertical"
+                        android:text="蜂巢KTV"
+                        android:textColor="#ff333333"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/detailsTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="56dp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:text="2018-02-14 22:30"
+                        android:textColor="#ff999999"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/detailsName"
+                        android:background="#EEEEEE"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp" />
+
+                    <TextView
+                        android:id="@+id/detailsAdds"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/detailsName"
+                        android:layout_marginBottom="0dp"
+                        android:drawableRight="@mipmap/ktvdetails_navigation"
+                        android:gravity="center_vertical"
+                        android:minHeight="44dp"
+                        android:text="商家地址：成都市武侯区仁和东街64号附近"
+                        android:textColor="#ff333333"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/detailsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/item_bg" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <include layout="@layout/layout_error_network" />
+    </RelativeLayout>
+</LinearLayout>

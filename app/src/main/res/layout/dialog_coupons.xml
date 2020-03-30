@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/overDialog"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="轻触或下滑返回"
+        android:textColor="#ffffffff"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/dialog_merchant_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="待付款酒水"
+            android:textColor="#ff000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:text="约玩即将开始，请为您所布置的酒水进行付款！"
+            android:textColor="#ff666666"
+            android:textSize="13sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.example.shadow.heartrecreation.view.MyRecyclerView
+                    android:id="@+id/drinksList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/dialog_bg" />
+
+                <LinearLayout
+                    android:id="@+id/couponsQuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/dialog_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="使用优惠券"
+                        android:textColor="#ff333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/couponsMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@mipmap/button_more_gray"
+                        android:drawablePadding="5dp"
+                        android:hint="无可用"
+                        android:textColor="#FF911E"
+                        android:textColorHint="#ff999999"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/dialog_bg"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="52dp"
+                            android:layout_height="19dp"
+                            android:layout_weight="1"
+                            android:text="商品总额"
+                            android:textColor="#ff333333"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/couponsMoneys"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥0.00"
+                            android:textColor="#ffff6464"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <com.example.shadow.heartrecreation.view.MyListView
+                        android:id="@+id/drinksMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="vertical"
+                        android:id="@+id/layout_coupons_roomMoney">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentTop="true"
+                            android:background="#ffe1e1e1" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="包房服务费"
+                                android:textColor="#ff999999"
+                                android:textSize="11dp" />
+
+                            <TextView
+                                android:id="@+id/roomMoney"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center_vertical"
+                                android:text="¥0.00"
+                                android:textColor="#ff999999"
+                                android:textSize="11dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:id="@+id/layout_couponsMoney"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="优惠券"
+                            android:textColor="#ff999999"
+                            android:textSize="11dp" />
+
+                        <TextView
+                            android:id="@+id/tv_couponsMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:text="¥12800.00"
+                            android:textColor="#ff999999"
+                            android:textSize="11dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/layout_money_tips"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/yueMoney"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:text="需付款:¥0.00"
+                android:textColor="#FF6464" />
+
+            <TextView
+                android:id="@+id/mainContextGo"
+                style="@style/textBtn"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/yue_btn"
+                android:text="立即付款" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

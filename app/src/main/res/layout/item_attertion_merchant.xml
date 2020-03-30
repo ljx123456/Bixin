@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="12dp"
+    android:background="@drawable/item_bg"
+    android:orientation="vertical"
+    android:paddingLeft="12dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/serveImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:scaleType="centerCrop"
+        android:src="#cccccc"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/searchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/serveImage"
+        android:layout_toRightOf="@+id/serveImage"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxEms="8"
+        android:text="青苔"
+        android:textColor="#333333"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/searchSao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/serveImage"
+        android:layout_toRightOf="@+id/serveImage"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxEms="16"
+        android:text="地址:fjdsklfkdslffdkjg;ldl;jkldsgjds;fjdgkldsfl;sjfkgj;kdsf;lsjkg"
+        android:textColor="#666666"
+        android:textSize="13dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingTop="20dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="20dp"
+            android:text="为确保有您需要的数量的达人及时接单，建议您挑选更多达人！"
+            android:textColor="#ff666666"
+            android:textSize="13dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E1E1E1" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/layout_sure">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我知道了"
+                    android:textColor="#80fe849b"
+                    android:textSize="16dp"
+                    android:id="@+id/tv_sure" />
+                <TextView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center"
+                    android:background="@drawable/tv_time_bg"
+                    android:text="3"
+                    android:textColor="#ffffffff"
+                    android:textSize="10dp"
+                    android:id="@+id/tv_time"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

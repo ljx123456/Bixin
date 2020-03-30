@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="15dp"
+        android:layout_marginRight="2dp"
+        android:background="#FF911E" />
+
+    <TextView
+        android:id="@+id/serveMerchant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蜂巢KTV（武侯店）"
+        android:textColor="#333333"
+        android:textSize="16dp" />
+</LinearLayout>

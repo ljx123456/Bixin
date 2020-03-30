@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/yueDrinksImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        android:src="#e4e4e4"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/yueDrinksMl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yueDrinksImage"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@+id/yueDrinksImage"
+        android:text="550ML/听"
+        android:textColor="#ff999999"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/yueDrinksName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/yueDrinksImage"
+        android:layout_weight="1"
+        android:text="情迷巴西"
+        android:maxEms="6"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#ff333333"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/yueDrinksNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="120dp"
+
+        android:maxWidth="80dp"
+        android:text="x1" />
+    <!--android:layout_toLeftOf="@+id/yueDrinksMoney"-->
+    <!--android:layout_alignTop="@+id/yueDrinksName"-->
+
+    <TextView
+        android:id="@+id/yueDrinksMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:text="￥1760.00"
+        android:textColor="#ffff6464"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/yueDrinksTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yueDrinksMl"
+        android:layout_alignParentRight="true"
+        android:text="剩余有效期：3天"
+        android:textColor="#ffff6464"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#E1E1E1" />
+</RelativeLayout>

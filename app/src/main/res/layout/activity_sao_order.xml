@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ECF0F4"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="84dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/item_bg"
+                android:orientation="vertical"
+                android:id="@+id/layout_sao_ktv">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="约玩场地"
+                        android:textColor="#999999"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/YueAddsName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="蜂巢KTV（武侯店）"
+                        android:textColor="#333333"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="85dp"
+                    android:background="#D8D8D8" />
+
+                <LinearLayout
+                    android:id="@+id/addsBaofang"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="包房类型"
+                        android:textColor="#999999"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/YueAddsBaofangType"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:textColor="#333333"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="85dp"
+                    android:background="#D8D8D8" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="包房号码"
+                        android:textColor="#999999"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/yueRoomNum"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="k888"
+                        android:textColor="#333333"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/item_bg"
+                android:id="@+id/layout_sao_service"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical"
+                    android:text="约玩达人"
+                    android:textColor="#ff333333"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#E1E1E1" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/yueServeList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <com.example.shadow.heartrecreation.view.MyRecyclerView
+                android:id="@+id/yueDrinkss"
+                android:background="@drawable/item_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/item_bg"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="订单总额"
+                        android:textColor="#ff333333"
+                        android:textSize="13dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="¥12800.00"
+                        android:textColor="#ffff6464"
+                        android:textSize="13dp"
+                        android:id="@+id/tv_sao_total_money"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#E1E1E1" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="酒水金额"
+                        android:textColor="#ff999999"
+                        android:textSize="12dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="¥12800.00"
+                        android:textColor="#ff999999"
+                        android:textSize="12dp"
+                        android:id="@+id/tv_sao_drink_money"/>
+                </RelativeLayout>
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1px"-->
+                    <!--android:background="#E1E1E1" />-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:gravity="center_vertical">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="约玩达人"-->
+                        <!--android:textColor="#ff999999"-->
+                        <!--android:textSize="11sp"/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:text="￥12800.00"-->
+                        <!--android:textColor="#ff999999"-->
+                        <!--android:textSize="11sp"-->
+                        <!--android:id="@+id/tv_sao_service_money"/>-->
+                <!--</RelativeLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1px"-->
+                    <!--android:background="#E1E1E1" />-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:gravity="center_vertical">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="包房服务费"-->
+                        <!--android:textColor="#ff999999"-->
+                        <!--android:textSize="11sp"/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:text="￥12800.00"-->
+                        <!--android:textColor="#ff999999"-->
+                        <!--android:textSize="11sp"-->
+                        <!--android:id="@+id/tv_sao_box_money"/>-->
+                <!--</RelativeLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#FABDC9"
+        android:gravity="center_vertical"
+        android:id="@+id/saoMoneyTips"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="该付款金额为酒水金额，不包含达人金额"
+            android:textColor="#ffffffff"
+            android:textSize="13dp"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="酒水付款：¥68800.00"
+            android:textColor="#ffff6464"
+            android:textSize="16dp"
+            android:id="@+id/tv_sao_pay_money"/>
+        <Button
+            android:layout_width="132dp"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_bg"
+            android:text="立即付款"
+            android:textColor="#ffffffff"
+            android:textSize="16dp"
+            android:id="@+id/btn_sao_pay"/>
+    </LinearLayout>
+
+</LinearLayout>

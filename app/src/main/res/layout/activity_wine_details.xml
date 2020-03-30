@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF0F4"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/item_bg"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:id="@+id/detailsName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="56dp"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#ff333333"
+                        android:textSize="24sp" />
+
+                    <include layout="@layout/layout_view" />
+
+                    <TextView
+                        android:id="@+id/detailsAdds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@mipmap/ktvdetails_navigation"
+                        android:gravity="center_vertical"
+                        android:minHeight="44dp"
+                        android:text=""
+                        android:textColor="#ff333333"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <com.example.shadow.heartrecreation.view.NestedExpandaleListView
+                    android:id="@+id/detailsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/item_bg"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <include layout="@layout/layout_error_network" />
+    </RelativeLayout>
+</LinearLayout>

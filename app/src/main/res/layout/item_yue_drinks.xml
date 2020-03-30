@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/yueDrinksImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="8dp"
+            android:scaleType="centerCrop"
+            android:src="#e4e4e4"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/yueDrinksName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="情迷巴西"
+            android:textColor="#ff333333"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/yueDrinksMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥1760.00"
+            android:textColor="#ffff6464"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/yueDrinksSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@mipmap/shoppingcart_button_reduce" />
+
+        <TextView
+            android:id="@+id/yueDrinksNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/yueDrinksAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@mipmap/shoppingcart_button_add" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E1E1E1"/>
+
+
+</LinearLayout>

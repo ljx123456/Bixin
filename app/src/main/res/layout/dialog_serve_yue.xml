@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/serveOver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_home_list_merchant_bg"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingTop="12dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/serveDialogImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="6dp"
+                android:scaleType="centerCrop"
+                app:riv_oval="true" />
+
+            <TextView
+                android:id="@+id/serveDialogName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/serveDialogImage"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                android:text="仙儿" />
+
+            <TextView
+                android:id="@+id/serveDialogIdentity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/serveDialogName"
+                android:layout_alignBottom="@+id/serveDialogName"
+                android:textColor="#999999"
+                android:textSize="12dp"
+                android:text="（欢唱达人）" />
+
+            <TextView
+                android:id="@+id/serveDialogSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/serveDialogImage"
+                android:layout_toEndOf="@+id/serveDialogImage"
+                android:background="@drawable/woman_shape"
+                android:drawableLeft="@mipmap/content_icon_man"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingTop="1dp"
+                android:textSize="11dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="1dp"
+                android:text="21"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/serveDialogMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#FF6464"
+                android:textSize="24dp"
+                android:text="¥：0.00" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="约玩场地"
+                android:textColor="#999999"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/yueChan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="#999999"
+                android:textSize="14dp"
+                android:text="蜂巢KTV" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E1E1E1" />
+
+        <TextView
+            android:id="@+id/serveYueTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="56dp"
+            android:textColor="#ffff6464"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:id="@+id/serveDialogGo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/pink_all_shape"
+                android:gravity="center"
+                android:text="确认邀请"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

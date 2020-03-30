@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="设置您的约玩人数"
+        android:textColor="#ff333333"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="15dp"
+        android:background="#E1E1E1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/pink_wire_shape" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="约玩人数                "
+                    android:textColor="#ff333333"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="      人"
+                    android:textColor="#ff333333"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/pink_wire_shape" />
+        </LinearLayout>
+
+
+        <cn.qqtheme.framework.widget.WheelView
+            android:id="@+id/wheelviewSingle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:privateImeOptions="12dp"
+        android:text="(注：在邀约达人时，为保证成功率，您可以尽可能多的选择邀约对象，达人将根据接单时间先后来获得邀约机会；"
+        android:textColor="#ff666666"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text=" 您可以对已受邀达人进行筛选："
+        android:textColor="#ff666666"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/texttwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text=" 1.满意，则确认付款即可。
+ 2.不满意，则可以取消达人，系统将为你重新匹配。"
+        android:textColor="#FF6464"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textthree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="最终到场达人数将根据您的设置来决定。"
+        android:textColor="#ff666666"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textfour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="(可邀约人数=实际需要达人数 X 2))"
+        android:textColor="#FF6464"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textxianshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:drawableRight="@mipmap/shang"
+        android:drawablePadding="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="12dp"
+        android:text="详情"
+        android:textColor="#ff71c5ff"
+        android:textSize="12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="#E1E1E1" />
+
+    <TextView
+        android:id="@+id/nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="#fffe849b"
+        android:textSize="16dp" />
+</LinearLayout>

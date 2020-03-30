@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/yue_btn_bg"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+
+        <TextView
+            android:id="@+id/itemMainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="邀请名单"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/itemMainNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/itemMainText"
+            android:gravity="center"
+            android:paddingLeft="4.5dp"
+            android:paddingRight="4.5dp"
+            android:textColor="#333333"
+            android:textSize="12dp"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/myInviteNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/itemMainText"
+            android:layout_toRightOf="@+id/itemMainNum"
+            android:textColor="#999999"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/orderPeopleNum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="删除全部邀请"
+            android:textColor="#999999"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/myInviteList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/myInviteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:drawableBottom="@mipmap/double_more_button_top"
+        android:paddingBottom="8dp" />
+</LinearLayout>
